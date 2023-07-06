@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header-1">
+        <div class="container">
+            <div class="navbar">
+                <a href="" class="logo">IPhon<span>ic</span></a>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Account</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Productos -->
+    <main>
+        <form id="formBuscar">
+            <input type="text" id="inputBuscar" value="" placeholder="Buscar producto...">
+        </form>
+        <div id="productos">
+            <!-- Aqui van a ir los productos que esten en la base de datos -->
+        </div>
+    </main>
+    <!-- Carrito -->
+    <section class="ocultar">
+        <h1><span id="cantidadProductos">0</span></h1>
+        <div id="carrito">
+            <!-- Aqui vamos a cargar los productos que esten en el carrito -->
+        </div>
+        <h3>Total: $ <span id="totalCarrito">0</span> </h3>
+        <a href="#" id="botonComprar" class="btnComprar">Comprar</a>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./app.js"></script>
+</body>
+</html>

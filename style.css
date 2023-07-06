@@ -1,0 +1,249 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  max-width: 1300px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.logo {
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.87rem;
+}
+
+.logo span {
+  color: #9300e2;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+nav ul {
+  display: inline-block;
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  position: relative;
+}
+
+nav ul li a:after {
+  content: "";
+  width: 0;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transition: all .5s;
+  will-change: width;
+}
+
+nav ul li a:hover:after {
+  width: 100%;
+  right: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+p {
+  color: #ffffffb9;
+}
+
+main {
+  width: 60%;
+  margin: auto;
+  padding: 20px 0 0 0;
+}
+
+main input {
+  margin-top: 50px;
+  width: 40%;
+  padding: 12px;
+  border-radius: 10px;
+  background: #222;
+  border: 1px solid #fff;
+  font-weight: 100;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+section {
+  position: fixed;
+  box-shadow: -6px -2px 25px -13px rgba(0, 0, 0, 0.15);
+  width: 340px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  padding: 30px;
+  transition: all 0.2s;
+  background-color: white;
+}
+
+section h1 {
+  position: absolute;
+  top: 20px;
+  right: 360px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  box-shadow: 0px 0px 14px 0px rgba(144, 5, 209, 0.719);
+  background: url("img/cart.png") center center no-repeat black;
+}
+
+section {
+  background-color: #000;
+  color: #fff;
+}
+
+section h1 span {
+  display: block;
+  background-color: rgba(144, 5, 209, 0.719);
+  border-radius: 150px;
+  padding: 5px;
+  width: 30px;
+  text-align: center;
+  font-size: 14px;
+  margin: -10px 0 0 30px;
+}
+
+section h3 {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.btnAdd, .btnQuitar, .btnComprar {
+  color: white;
+  background-color: rgba(144, 5, 209, 0.719);
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.2);
+  margin: 10px auto;
+  display: block;
+  text-align: center;
+}
+
+.btn:hover {
+  border: 1px solid white;
+}
+
+.btnQuitar {
+  display: inline-block;
+  font-size: 14px;
+  padding: 5px 10px;
+}
+
+.productoCarrito {
+  border-bottom: 2px dashed rgba(0, 0, 0, 0.2);
+  padding: 10px 0;
+  margin-bottom: 10px;
+  line-height: 24px;
+}
+
+.productoCarrito h2 {
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+.ocultar {
+  right: -340px;
+  transition: all 0.2s;
+}
+
+#productos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  height: auto;
+}
+
+.producto {
+  flex-basis: 25%;
+  padding: 10px;
+  min-width: 200px;
+  margin-bottom: 50px;
+  transition: ease all 0.5s;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.producto .precio {
+  padding: 10px 0;
+  font-size: 20px;
+  background-color: red;
+  display: inline-block;
+  padding: 4px 10px;
+  color: white;
+  border-radius: 10px;
+  margin-top: 4px;
+}
+
+.producto h2 {
+  margin-bottom: 20px;
+}
+
+.producto {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.producto img {
+  display: flex;
+  justify-content: center;
+  min-height: 160px;
+  margin: 20px 0;
+  max-height: 150px;
+}
+
+.btnComprar {
+  margin-top: 30px;
+}
+
+.producto:hover {
+  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.oculto {
+  display: none;
+}
+
+.info {
+  border-radius: 10px;
+}
