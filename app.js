@@ -3,14 +3,11 @@ class BaseDeDatos {
     constructor() {
         this.productos = [];
         // Vamos a cargar todos los productos que tengamos
-        this.AddRegistro(1, "IPhone 14 Pro Max azul", 750, "Celulares", "iphone-azul.png");
-        this.AddRegistro(2, "IPhone 14 Pro Max rojo", 750, "Celulares", "iphone-rojo.png");
-        this.AddRegistro(3, "IPhone 14 Pro Max verde", 750, "Celulares", "iphone-verde.png");
-        this.AddRegistro(4, "IPhone 14 Pro Max blanco", 750, "Celulares", "iphone-blanco.png");
-        this.AddRegistro(5, "IPhone 14 Pro Max negro", 750, "Celulares", "iphone-negro.png");
-        this.AddRegistro(6, "IPhone 12 Pro Azul", 550, "Celulares", "iphone-12-pro-azul.png");
-        this.AddRegistro(7, "IPhone 12 Pro Blanco", 550, "Celulares", "iphone-12-pro-blanco.png");
-        this.AddRegistro(8, "IPhone 12 Pro Sellado", 550, "Celulares", "iphone-sellado.png");
+        this.AddRegistro(1, "Arroz", 750, "Granos", "iphone-azul.png");
+        this.AddRegistro(2, "Fideos", 750, "Pastas", "iphone-rojo.png");
+        this.AddRegistro(3, "Alfajor", 750, "Golosinas", "iphone-verde.png");
+        this.AddRegistro(4, "Pan", 750, "Panaderia", "iphone-blanco.png");
+        this.AddRegistro(5, "Atun", 750, "Enlatados", "iphone-negro.png");
     }
 
     AddRegistro(id, nombre, precio, categoria, imagen) {
@@ -28,6 +25,10 @@ class BaseDeDatos {
 
     registrosPorNombre(palabra) {
         return this.productos.filter((producto) => producto.nombre.toLowerCase().includes(palabra));
+    }
+
+    registroPorCategoria(categoria) {
+        return this.productos.filter((producto) => producto.categoria == categoria);
     }
 }
 
@@ -134,6 +135,34 @@ const formBuscar = document.querySelector("#formBuscar");
 const inputBuscar = document.querySelector("#inputBuscar");
 const botonCarrito = document.querySelector("section h1");
 const botonComprar = document.querySelector("#botonComprar");
+const botonesCategorias = document.querySelectorAll(".btnCategoria");
+const botonTodos = document.querySelector(".btnTodos");
+
+
+botonesCategorias.forEach((boton) => {
+    boton.addEventListener("click", (event) => {
+        event.preventDefault();
+        quitarClase();
+        boton.classList.add("seleccionado");
+        const productosPorCategoria = bd.registroPorCategoria(boton.innerText);
+        cargarProductos(productosPorCategoria);
+    })
+});
+
+botonTodos.addEventListener("click", (event) => {
+    event.preventDefault();
+    quitarClase();
+    botonTodos.classList.add("seleccionado");
+    cargarProductos(bd.traerRegistros());
+})
+
+// Funcion para eliminar la clase "seleccionado"
+function quitarClase() {
+    const botonSeleccionado = document.querySelector(".seleccionado");
+    if (botonSeleccionado) {
+        botonSeleccionado.classList.remove("seleccionado");
+    }
+}
 
 
 // Llamamos la funcion

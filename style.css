@@ -55,8 +55,9 @@ nav ul li a {
 nav ul li a:after {
   content: "";
   width: 0;
-  height: 1px;
-  background-color: #fff;
+  margin-bottom: -5px;
+  height: 3px;
+  background-color: #9237e7;
   position: absolute;
   bottom: 0;
   right: 50%;
@@ -76,6 +77,11 @@ a {
 
 p {
   color: #ffffffb9;
+}
+
+#categorias li {
+  list-style: none;
+  display: inline-block;
 }
 
 main {
@@ -142,6 +148,32 @@ section h3 {
   padding-top: 10px;
   text-align: center;
   font-size: 30px;
+}
+
+.btnCategoria, .btnTodos {
+  color: white;
+  background-color: rgba(144, 5, 209, 0.719);
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.2);
+  margin: 10px auto;
+  display: block;
+  text-align: center;
+  transition: ease all 0.3s;
+}
+
+.btnCategoria:hover {
+  background-color: #222;
+}
+
+.btnTodos:hover {
+  background-color: #222;
+}
+
+.seleccionado {
+  background-color: #222;
 }
 
 .btnAdd, .btnQuitar, .btnComprar {
