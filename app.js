@@ -2,20 +2,11 @@
 class BaseDeDatos {
     constructor() {
         this.productos = [];
-        // Vamos a cargar todos los productos que tengamos
-        this.AddRegistro(1, "Arroz", 750, "Granos", "iphone-azul.png");
-        this.AddRegistro(2, "Fideos", 750, "Pastas", "iphone-rojo.png");
-        this.AddRegistro(3, "Alfajor", 750, "Golosinas", "iphone-verde.png");
-        this.AddRegistro(4, "Pan", 750, "Panaderia", "iphone-blanco.png");
-        this.AddRegistro(5, "Atun", 750, "Enlatados", "iphone-negro.png");
     }
 
-    AddRegistro(id, nombre, precio, categoria, imagen) {
-        const producto = new Producto(id, nombre, precio, categoria, imagen);
-        this.productos.push(producto);
-    }
-
-    traerRegistros() {
+    async traerRegistros() {
+        const response = await fetch("./productos.json");
+        this.productos = await response.json();
         return this.productos;
     }
 
@@ -153,7 +144,7 @@ botonTodos.addEventListener("click", (event) => {
     event.preventDefault();
     quitarClase();
     botonTodos.classList.add("seleccionado");
-    cargarProductos(bd.traerRegistros());
+    cargarProductos(bd.productos);
 })
 
 // Funcion para eliminar la clase "seleccionado"
@@ -166,7 +157,7 @@ function quitarClase() {
 
 
 // Llamamos la funcion
-cargarProductos(bd.traerRegistros());
+bd.traerRegistros().then((productos) => cargarProductos(productos));
 
 // Muestra los registros de la base de datos en nuestro HTML
 function cargarProductos(productos) {

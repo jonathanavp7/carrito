@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "nombre": "Arroz",
+        "precio": 100,
+        "categoria": "Granos",
+        "imagen": "iphone-azul.png"
+    },
+    {
+        "id": 2,
+        "nombre": "Fideos",
+        "precio": 100,
+        "categoria": "Pastas",
+        "imagen": "iphone-rojo.png"
+    },
+    {
+        "id": 3,
+        "nombre": "Alfajor",
+        "precio": 100,
+        "categoria": "Golosinas",
+        "imagen": "iphone-verde.png"
+    },
+    {
+        "id": 4,
+        "nombre": "Pan",
+        "precio": 100,
+        "categoria": "Panaderia",
+        "imagen": "iphone-negro.png"
+    }
+]
