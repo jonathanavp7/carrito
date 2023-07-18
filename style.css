@@ -152,7 +152,8 @@ section h3 {
 
 .btnCategoria, .btnTodos {
   color: white;
-  background-color: rgba(144, 5, 209, 0.719);
+  background-color: #222;
+  border: 2.5px solid #7a11b3de;
   text-decoration: none;
   display: inline-block;
   padding: 10px;
@@ -165,20 +166,20 @@ section h3 {
 }
 
 .btnCategoria:hover {
-  background-color: #222;
+  background-color: #7a11b3de;
 }
 
 .btnTodos:hover {
-  background-color: #222;
+  background-color: #7a11b3de;
 }
 
 .seleccionado {
-  background-color: #222;
+  background-color: #7a11b3de;
 }
 
 .btnAdd, .btnQuitar, .btnComprar {
   color: white;
-  background-color: rgba(144, 5, 209, 0.719);
+  background-color: #7a11b3de;
   text-decoration: none;
   display: inline-block;
   padding: 10px;
@@ -226,7 +227,7 @@ section h3 {
 .producto {
   flex-basis: 25%;
   padding: 10px;
-  min-width: 200px;
+  min-width: 210px;
   margin-bottom: 50px;
   transition: ease all 0.5s;
   color: #fff;
@@ -247,6 +248,7 @@ section h3 {
 
 .producto h2 {
   margin-bottom: 20px;
+  font-size: 20px;
 }
 
 .producto {
@@ -278,4 +280,15 @@ section h3 {
 
 .info {
   border-radius: 10px;
+}
+
+@media (width <= 800px) {
+  #productos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  nav {
+    display: none;
+  }
 }

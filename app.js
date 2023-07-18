@@ -167,7 +167,7 @@ function cargarProductos(productos) {
             <div class="producto">
                 <h2>${producto.nombre}</h2>
                 <p>$${producto.precio}</p>
-                <img src="img/${producto.imagen}" width="160" height="100" />
+                <img src="img/${producto.imagen}" class="img-producto"/>
                 <p><a href="#" class="btnAdd" data-id="${producto.id}">Agregar al carrito</a></p>
             </div>
         `;

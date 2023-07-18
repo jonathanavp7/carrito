@@ -1,30 +1,198 @@
 [
     {
         "id": 1,
-        "nombre": "Arroz",
-        "precio": 100,
-        "categoria": "Granos",
+        "nombre": "IPhone 12 - 128GB - color azul",
+        "precio": 450,
+        "categoria": "Celulares",
         "imagen": "iphone-azul.png"
     },
     {
         "id": 2,
-        "nombre": "Fideos",
-        "precio": 100,
-        "categoria": "Pastas",
+        "nombre": "IPhone 12 - 128GB - color rojo",
+        "precio": 450,
+        "categoria": "Celulares",
         "imagen": "iphone-rojo.png"
     },
     {
         "id": 3,
-        "nombre": "Alfajor",
-        "precio": 100,
-        "categoria": "Golosinas",
+        "nombre": "IPhone 12 - 128GB - color verde",
+        "precio": 450,
+        "categoria": "Celulares",
         "imagen": "iphone-verde.png"
     },
     {
         "id": 4,
-        "nombre": "Pan",
-        "precio": 100,
-        "categoria": "Panaderia",
+        "nombre": "IPhone 12 - 128GB - color negro",
+        "precio": 450,
+        "categoria": "Celulares",
         "imagen": "iphone-negro.png"
+    },
+    {
+        "id": 5,
+        "nombre": "IPhone 12 - 128GB - color blanco",
+        "precio": 450,
+        "categoria": "Celulares",
+        "imagen": "iphone-blanco.png"
+    },
+    {
+        "id": 6,
+        "nombre": "IPhone 13 - 128GB - color blanco",
+        "precio": 550,
+        "categoria": "Celulares",
+        "imagen": "iphone-13.png"
+    },
+    {
+        "id": 7,
+        "nombre": "IPhone 13 - 128GB - Sellado",
+        "precio": 650,
+        "categoria": "Celulares",
+        "imagen": "iphone-sellado.png"
+    },
+    {
+        "id": 8,
+        "nombre": "IPhone 12 Pro - 250GB - color azul",
+        "precio": 510,
+        "categoria": "Celulares",
+        "imagen": "iphone-12-pro-azul.png"
+    },
+    {
+        "id": 9,
+        "nombre": "IPhone 12 Pro - 250GB - color blanco",
+        "precio": 510,
+        "categoria": "Celulares",
+        "imagen": "iphone-12-pro-blanco.png"
+    },
+    {
+        "id": 10,
+        "nombre": "IPhone 11 - 128GB - Clase A - color blanco",
+        "precio": 360,
+        "categoria": "Celulares",
+        "imagen": "iphone-blanco-2.png"
+    },
+    {
+        "id": 11,
+        "nombre": "IPhone 12 Pro - 250GB - color negro",
+        "precio": 510,
+        "categoria": "Celulares",
+        "imagen": "iphone-12-pro-negro.png"
+    },
+    {
+        "id": 12,
+        "nombre": "Electronic Laptop ASUS - 650GB / 8 RAM",
+        "precio": 800,
+        "categoria": "PC / Laptop",
+        "imagen": "laptop-asus.png"
+    },
+    {
+        "id": 13,
+        "nombre": "MacBook Apple - 1TB / 8 RAM",
+        "precio": 1200,
+        "categoria": "PC / Laptop",
+        "imagen": "macbook.png"
+    },
+    {
+        "id": 14,
+        "nombre": "PC Gamer FX-6100 3TB / 12 RAM",
+        "precio": 1500,
+        "categoria": "PC / Laptop",
+        "imagen": "pc-gamer-fx-6100.png"
+    },
+    {
+        "id": 15,
+        "nombre": "PC Toshiba 1TB / 6 RAM",
+        "precio": 680,
+        "categoria": "PC / Laptop",
+        "imagen": "pc-toshiba.png"
+    },
+    {
+        "id": 16,
+        "nombre": "Audifonos JBL - Bloqueo de ruido",
+        "precio": 120,
+        "categoria": "Accesorios",
+        "imagen": "cascos-jbl.png"
+    },
+    {
+        "id": 17,
+        "nombre": "Cornetas JBL - Bluetooth",
+        "precio": 90,
+        "categoria": "Accesorios",
+        "imagen": "cornetas-jbl.png"
+    },
+    {
+        "id": 18,
+        "nombre": "CPU Gamer Intel-Core 12.5'",
+        "precio": 430,
+        "categoria": "Accesorios",
+        "imagen": "cpu-gamer.png"
+    },
+    {
+        "id": 19,
+        "nombre": "TV LCD - Alta definición",
+        "precio": 950,
+        "categoria": "Televisores",
+        "imagen": "tv-lcd.png"
+    },
+    {
+        "id": 20,
+        "nombre": "Apple Watch - SmartWatch 2.0'",
+        "precio": 425,
+        "categoria": "Accesorios",
+        "imagen": "apple-watch-smartwatch.png"
+    },
+    {
+        "id": 21,
+        "nombre": "IPhone 8 Plus - 128GB - Varios Colores disponibles",
+        "precio": 185,
+        "categoria": "Celulares",
+        "imagen": "iphone-8-plus.png"
+    },
+    {
+        "id": 22,
+        "nombre": "Auriculares Bluetooth para el cuello",
+        "precio": 45,
+        "categoria": "Accesorios",
+        "imagen": "auriculares-bluetooth-cuello.png"
+    },
+    {
+        "id": 23,
+        "nombre": "International Smart TV AOC - Retroiluminado LED",
+        "precio": 1100,
+        "categoria": "Televisores",
+        "imagen": "tv-aoc.png"
+    },
+    {
+        "id": 24,
+        "nombre": "Apple Airpods i16 - Cancelación de ruido",
+        "precio": 95,
+        "categoria": "Accesorios",
+        "imagen": "airpods-apple.png"
+    },
+    {
+        "id": 25,
+        "nombre": "Tablet Sony Xperia Z4",
+        "precio": 320,
+        "categoria": "Tablet",
+        "imagen": "tablet-sony.png"
+    },
+    {
+        "id": 26,
+        "nombre": "IPhone X - 128GB - Color negro",
+        "precio": 150,
+        "categoria": "Celulares",
+        "imagen": "iphone-x.png"
+    },
+    {
+        "id": 27,
+        "nombre": "IPad Apple Touch Air 6",
+        "precio": 285,
+        "categoria": "Tablet",
+        "imagen": "tablet-ipad.png"
+    },
+    {
+        "id": 28,
+        "nombre": "Mouse / Raton LED XT-96 para PC Gamer",
+        "precio": 80,
+        "categoria": "Accesorios",
+        "imagen": "mouse.png"
     }
 ]
