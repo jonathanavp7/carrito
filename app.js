@@ -48,6 +48,22 @@ class Carrito {
         }
         localStorage.setItem("carrito", JSON.stringify(this.carrito));
         this.listar();
+        // Toastify
+        Toastify({
+            text: `${producto.nombre} fue agregado al carrito`,
+            duration: 1500,
+            destination: "https://github.com/apvarun/toastify-js",
+            newWindow: true,
+            close: true,
+            className: "info",
+            gravity: "bottom", 
+            position: "center", 
+            stopOnFocus: true, 
+            style: {
+              background: "linear-gradient(to right, #7a11b3de, #7a11b393)",
+            },
+            onClick: function(){} 
+          }).showToast();
     }
 
     quitar(id) {
@@ -71,6 +87,7 @@ class Carrito {
                 <h2>${producto.nombre}</h2>
                 <p>${producto.precio}</p>
                 <p>Cantidad: ${producto.cantidad}</p>
+                <img src="img/${producto.imagen}" class="img-producto" width="150px">
                 <p><a href="#" class="btnQuitar" data-id="${producto.id}">Quitar del carrito</a></p>
             </div>
             `;
@@ -167,7 +184,7 @@ function cargarProductos(productos) {
             <div class="producto">
                 <h2>${producto.nombre}</h2>
                 <p>$${producto.precio}</p>
-                <img src="img/${producto.imagen}" class="img-producto"/>
+                <img src="img/${producto.imagen}" class="img-producto" width="170px">
                 <p><a href="#" class="btnAdd" data-id="${producto.id}">Agregar al carrito</a></p>
             </div>
         `;

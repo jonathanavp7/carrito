@@ -194,10 +194,11 @@ section h3 {
   margin: 10px auto;
   display: block;
   text-align: center;
+  transition: ease all 0.5s;
 }
 
-.btn:hover {
-  border: 1px solid white;
+.btnAdd:hover, .btnQuitar:hover, .btnComprar:hover {
+  background-color: #7a11b393;
 }
 
 .btnQuitar {
@@ -263,9 +264,13 @@ section h3 {
   flex-direction: column;
 }
 
+.info {
+  border-radius: 10px;
+}
+
 .producto img {
   display: flex;
-  justify-content: center;
+  text-align: center;
   min-height: 160px;
   margin: 20px 0;
   max-height: 150px;
