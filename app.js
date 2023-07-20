@@ -85,7 +85,7 @@ class Carrito {
             divCarrito.innerHTML += `
             <div class="productoCarrito">
                 <h2>${producto.nombre}</h2>
-                <p>${producto.precio}</p>
+                <p>$${producto.precio}</p>
                 <p>Cantidad: ${producto.cantidad}</p>
                 <img src="img/${producto.imagen}" class="img-producto" width="150px">
                 <p><a href="#" class="btnQuitar" data-id="${producto.id}">Quitar del carrito</a></p>
