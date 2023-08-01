@@ -153,6 +153,7 @@ botonesCategorias.forEach((boton) => {
         quitarClase();
         boton.classList.add("seleccionado");
         const productosPorCategoria = bd.registroPorCategoria(boton.innerText);
+        inputBuscar.value = "";
         cargarProductos(productosPorCategoria);
     })
 });
